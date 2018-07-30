@@ -40,7 +40,7 @@ void Queue::removeFront()
     {
         QueueNode* remove = m_head;
         m_head = remove->getNext(); 
-        m_head->setPrev(remove=>getPrev());
+        m_head->setPrev(remove->getPrev());
         remove->getPrev()->setNext(m_head);
         delete remove;
         remove = nullptr;
@@ -49,7 +49,14 @@ void Queue::removeFront()
 
 int Queue::getFront()
 {
-    return m_head->getVal();
+    if(!isEmpty())
+    {
+        return m_head->getVal();
+    }
+    else
+    {
+        return 0;
+    }
 }
 
 void Queue::addBack(int val)
@@ -69,7 +76,6 @@ void Queue::addBack(int val)
         newNode->setPrev(m_head->getPrev());
         newNode->setNext(m_head);
         m_head->setPrev(newNode);
-        m_head = newNode;
         newNode = nullptr;
     }
 }
@@ -79,12 +85,14 @@ void Queue::printQueue()
 {
     QueueNode* next = m_head;
     bool atEnd = false;
-    while(!atEnd)
+    
+    while(!atEnd && !isEmpty())
     {
         if(next->getNext() == m_head)
         {
             atEnd = true;
         }
         std::cout << next->getVal() << std::endl;
+        next = next->getNext();
     }
 }
