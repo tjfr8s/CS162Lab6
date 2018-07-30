@@ -17,7 +17,7 @@ INCS = $(shell find . -maxdepth 1 -type f -name \*.$(INCEXT))
 QueueLab: $(OBJS)
 	$(CXX) $^ -o QueueLab
 
-QueueTest: Node.o QueueTest.o 
+QueueTest: Node.o QueueTest.o Queue.o Menu.o IntegerValidation.o
 	$(CXX) $^ -o QueueTest
 
 $(OBJS): $(SRCS) $(INCS)
