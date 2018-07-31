@@ -28,7 +28,7 @@ $(OBJS): $(SRCS) $(INCS)
 
 .PHONY: clean
 clean:
-	rm *.o 
+	rm *.o QueueTest QueueLab
 
 	
 
