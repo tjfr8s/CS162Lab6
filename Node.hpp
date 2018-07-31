@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Author: Tyler Freitas
+ * Date: 20180730
+ * Description: This file describes a node for a queue class. It has data
+ * members to store the addresses of the next and previous values in the list.
+ * It has appropriate get and set functions.
+*******************************************************************************/ 
 #ifndef NODE_HPP
 #define NODE_HPP
 

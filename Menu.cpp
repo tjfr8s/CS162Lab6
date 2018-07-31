@@ -2,7 +2,11 @@
 /************************************************************
  * Author: Tyler Freitas
  * Date: 07/01/2018
- * Description: 
+ * Description: This file describes a menu that is used
+ * to perform functions on a linked list. The menu
+ * allows the user to add a new value, print the value at the
+ * front of the list, remove the value at the front, and 
+ * display the list.
 ************************************************************/
 
 
@@ -35,7 +39,8 @@ int getMenu()
 
 
 /************************************************************
- * Description:
+ * Description: Gets user input via getMenu and executes
+ * appropriate function.
 ************************************************************/
 void runMenu()
 {
