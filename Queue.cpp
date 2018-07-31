@@ -124,7 +124,7 @@ void Queue::printQueue()
         {
             atEnd = true;
         }
-        std::cout << next->getVal() << std::endl;
+        std::cout << next->getVal() << " ";
         next = next->getNext();
     }
 }
