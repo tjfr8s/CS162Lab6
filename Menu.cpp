@@ -23,9 +23,9 @@ int getMenu()
     std::cout << "**************************************************" << 
         std::endl;
     std::cout << "Choose an option: " << std::endl;
-    std::cout << "1. Enter value to be added to front of queue\n";
+    std::cout << "1. Enter value to be added to back of queue\n";
     std::cout << "2. Display front of queue \n";
-    std::cout << "3. Remove the back of the queue\n";
+    std::cout << "3. Remove the front of the queue\n";
     std::cout << "4. Display queue\n";
     std::cout << "5. Quit\n";
     std::cout << "**************************************************" << 
@@ -61,8 +61,8 @@ void runMenu()
                 break;
 
             case 2:
-                std::cout << "\nThe head of the queue is: " << queue.getFront() <<
-                    "\n\n";
+                std::cout << "\nThe head of the queue is: " << 
+                    queue.getFront() << "\n\n";
                 break;
 
             case 3: 

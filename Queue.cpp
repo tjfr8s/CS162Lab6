@@ -104,6 +104,7 @@ int Queue::getFront()
     }
     else
     {
+        std::cout << "The queue is empty.\n";
         return 0;
     }
 }

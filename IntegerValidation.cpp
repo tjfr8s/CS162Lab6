@@ -1,4 +1,4 @@
-/************************************************************
+/*******************************************************************************
  * Description: This function gets an integer from the user
  * and returns its value. It validates the integer and
  * requests the user enter a different value if they didn't
@@ -8,7 +8,7 @@
  *      - user enters an integer value.
  * Postconditions:
  *      - validated integer value is returned.
- ************************************************************/
+*******************************************************************************/ 
 #include "IntegerValidation.hpp"
 
 
